@@ -1,27 +1,68 @@
-h1 {
+.h1 {
     text-align:center;
     font-style:italic;
     color:#fc5137;
-}
-img {
-    height:100px;
-    float:left;
 }
 li {
     padding:7px;
 }
 li a:hover {
-    background-color: #fc5137;
+    background-color: red;
     color: white;
     text-decoration: none;
 }
-body {
-background-color:#bef441;
-}
-.nav-tabs a{
+nav-tabs a{
     color:white;
 }
 .d-block img-fluid {
     height:500px;
     width:500px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p{
+    text-align:center;
+    font-family:"Slabo" 15px;
+   
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.blue {
+    font-style: italic;
+    color: #fc5137;
+}
+h2 {
+    text-align:center;
+    font-family:"Slabo" 15px;
+}
+#pic{
+    height:50px;
+    width:50px;
+    float:left;
+    
+}
+.quotes {
+    text-align:center;
+}
+#img1 {
+    height:90px;
+    float:left;
+}
+.right  {
+    float:right;
+}
+.nav nav-pills {
+    width:80%;
 }
