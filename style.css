@@ -2,6 +2,7 @@
     text-align:center;
     font-style:italic;
     color:#fc5137;
+    font-family: "Italiano 25px";
 }
 li {
     padding:7px;
@@ -47,7 +48,11 @@ h2 {
     text-align:center;
     font-family:"Slabo" 15px;
 }
-#pic{
+#font {
+    
+    font-family:"Slabo 20px";
+}
+.pic{
     height:50px;
     width:50px;
     float:left;
@@ -56,13 +61,6 @@ h2 {
 .quotes {
     text-align:center;
 }
-#img1 {
-    height:90px;
-    float:left;
-}
-.right  {
-    float:right;
-}
-.nav nav-pills {
-    width:80%;
+.pictures {
+    height:100px;
 }

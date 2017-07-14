@@ -9,21 +9,41 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <a href="index.html"><img id="img1" src="https://cdn.dribbble.com/users/60266/screenshots/1926787/ricos-quesos-pizza_1x.jpg"></a>
+    
     <h1 class="h1">Michael's Pizzeria</h1>   
-    <ul class="nav nav-pills ">
-    <li class="active"><a href="index.html"> Home </a></li>
-            <li><a href="index2.html">About Us </a></li>
+    <nav class="navbar navbar-default" role="navigation">
+    	  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <div class="navbar-brand navbar-brand-centered"><a href="index.html"><img class="pic" src="http://www.iconarchive.com/download/i96773/iconsmind/outline/Pizza.ico"></a></div>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index2.html">About Us </a></li>
             <li><a href="index3.html">Menu</a></li>
-            <li><a href="index5.html">Gallery</a></li>
             <li><a href="index4.html">Contact</a></li>
-            <li class="right"><a href="indexlog.html">Log In</a></li>
-            <li class="right"><a href="indexlog2.html">Sign Up</a></li>
-            </ul>
+            <li><a href="index5.html">Gallery</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="indexlog.html">Log In</a></li>
+		        <li><a href="indexlog2.html">Sign Up</a></li>        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
   <div class="container">
       
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -47,8 +67,8 @@
         </div>
 
         <div class="item">
-            <div class=" carousel caption "
-          <img src="https://c8234d680a5ae618106c-6b3bd0826ac1075e2d1b52b94a2e0f63.ssl.cf1.rackcdn.com/7368_4ec3d4a4.jpg" alt="Sofia Vergara" style="width:100%;">
+            <div class=" carousel caption ">
+          <img src="http://cdn.pcwallart.com/images/sofia-vergara-wallpaper-3.jpg" alt="Sofia Vergara" style="width:100%;">
             <h2>Sofia Vergara</h2>
             <p>"I can completely lose myself into just absolutely satisfying things - a really amazing cheeseburger, a pizza, good fries, a beer. I enjoy being comfortable and eating whatever the hell I like. It's a big thing for me, just having the freedom to be able to do that."</p>
         </div>
@@ -87,7 +107,7 @@
         <span class="sr-only">Next</span> 
       </a>
     </div>
-  </div>
+  
 
 
 </body>

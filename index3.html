@@ -2,30 +2,50 @@
 <html>
 <head>
     <title>Michael's Pizzeria</title> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>   
 <body>
- <a href="index.html"><img id="img1" src="https://cdn.dribbble.com/users/60266/screenshots/1926787/ricos-quesos-pizza_1x.jpg"></a>
  <h1 class="h1">Michael's Pizzeria</h1>   
-    <ul class="nav nav-pills ">
-    <li class="active"><a href="index.html"> Home </a></li>
-            <li><a href="index2.html">About Us </a></li>
+    <nav class="navbar navbar-default" role="navigation">
+    	  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <div class="navbar-brand navbar-brand-centered"><a href="index.html"><img class="pic" src="http://www.iconarchive.com/download/i96773/iconsmind/outline/Pizza.ico"></a></div>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index2.html">About Us </a></li>
             <li><a href="index3.html">Menu</a></li>
-            <li><a href="index5.html">Gallery</a></li>
             <li><a href="index4.html">Contact</a></li>
-                <li class="right"><a href="indexlog.html">Log In</a></li>
-                <li class="right"><a href="indexlog2.html">Sign Up</a></li>
-            </ul>
+            <li><a href="index5.html">Gallery</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="indexlog.html">Log In</a></li>
+		        <li><a href="indexlog2.html">Sign Up</a></li>        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
         <div class="jumbotron">
             <h1 class="h1">Menu</h1>
             <p>Best Italian Food in all of Manhattan</p>
         </div>
-        
+        <div class="row">
+            <div class="col-xs-4">
         <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose a Pie
   <span class="caret"></span></button>
@@ -35,8 +55,41 @@
     <li><a href="#">Sausage Pizza $14.75</a></li>
     <li><a href="#">Pasta $4.75</a></li>
     <li><a href="#">Cheese Slice $2.75</a></li>
+    <li><a href="#">Calzones $3.00</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-xs-4">
+ <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Beverages
+  <span class="caret"></span></button>
+  <ul id="beverages" class="dropdown-menu">
+      <li><a href="#">Coke $1.00</a></li>
+      <li><a href="#">Diet Coke $1.00</a></li>
+      <li><a href="#"> Sprite $1.50</a></li>
+      <li><a href="#">Snapple $1.50</a></li>
+      <li><a href="#">Cocalight $5.00</a></li>
+      <li><a href="#">Budweiser $5.00</a></li>
+      <li><a href="#">Coffee 2.50</a></li>
+      <li><a href="#">Tea $3.00</a></li>
+      <li><a href="#">Wine $5.00</a></li>
   </ul>
-  
-</div>
+  </div>
+  </div>
+  <div class="col-xs-4">
+  <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Side Dishes
+  <span class="caret"></span></button>
+  <ul id="beverages" class="dropdown-menu">
+      <li><a href="#">Spaghetti $8.00</a></li>
+      <li><a href="#">Hamburger with fries $6.00</a></li>
+      <li><a href="#">Mozzarella Sticks $4.00</a></li>
+      <li><a href="#">Nachos n' Cheese $4.50</a></li>
+      <li><a href="#">Chicken and Rice $10.00</a></li>
+      <li><a href="#"> Garlic Bread $2.00</a></li>
+  </ul>
+  </ul>
+  </div>
+  </div>
 </body>
 </html>
