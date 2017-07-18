@@ -11,11 +11,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
 </head>   
-<body>
+<body >
  <h1 class="h1">Michael's Pizzeria</h1>   
       <nav class="navbar navbar-default" role="navigation">
-    	  <div class="container">
+    	  <div class="containers">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
@@ -26,7 +28,7 @@
 		      </button>
 		      <div class="navbar-brand navbar-brand-centered"><a href="index.html"><img class="pic" src="http://www.iconarchive.com/download/i96773/iconsmind/outline/Pizza.ico"></a></div>
 		    </div>
-		    
+
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
 		      <ul class="nav navbar-nav">
@@ -36,31 +38,98 @@
             <li><a href="index5.html">Gallery</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="indexlog.html">Sign In</a></li>
-		        <li><a href="indexlog2.html">Sign Up</a></li>		        
+		        <li><a href="indexlog.html">Log In</a></li>
+		        <li><a href="indexlog2.html">Sign Up</a></li>        
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+
     <div class="jumbotorn">
-        <h1>Contact Information</h1>
-        <p>Phone Number: (646)979-7400</p>
-        <p>Or Email Us: Michael@Micheal'sPizzeria.org</p>
-        <p>Address: 7 Carmine Street</p>
-        
-        
-        <h1>My First Google Map</h1>
+        <h2 class="h1">Contact Us:</h2>
+        <h2>Micheal's Pizzeria:</h2>
+        <p>(646)979-7400</p>
+        <p >Email: micheal@michealspizzanyc.com </p>
+        <h3 class="h1">Here's where you can find us:</h3>
+		</div>
+<div id="search">
+    <b>Start: </b>
+      <input id="locStore">
+      <button id="enter">Enter</button>
+    <select id="start">
+      <option id="starting" value="">Location</option>
+      <option id="starting2" value="">Refresh</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+      <option value="7 Carmine Street, New york, NY">Micheal's Pizzeria</option>
+    </select>
+    </div>
+    <div id="map"></div>
+ <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        float:right;
+        height: 600px;
+        width:700px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 50%;
+        margin: 0;
+        padding: 0;
+      }
+      #search {
+        position: absolute;
+    
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+    <script>
+      $("#enter").click(function(){
+        var location = $("#locStore").val();
+        $("#starting").attr("value", location);
+        $("#starting2").attr("value", location);
 
 
+      });
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat: 41.85, lng: -87.65}
+        });
+        directionsDisplay.setMap(map);
 
-<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23584.704057048923!2d-73.61454605371165!3d42.36196366793297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ddf36436274125%3A0xa38525c910d1f55a!2sChatham%2C+NY+12037!5e0!3m2!1sen!2sus!4v1500050679266" width="600" height="450" frameborder="0" style="border:0; margin:10px;" allowfullscreen></iframe>
+        var onChangeHandler = function() {
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        };
+        document.getElementById('start').addEventListener('change', onChangeHandler);
+        document.getElementById('end').addEventListener('change', onChangeHandler);
+      }
 
-<center><iframe src="http://maps.google.com/?q=40.728757.-73.988450" width="600" height="450" frameborder="0" style="border:0; margin:10px;" allowfullscreen></iframe>
-
-
-
-
-
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        directionsService.route({
+          origin: document.getElementById('start').value,
+          destination: document.getElementById('end').value,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCvg6rI3FaTQHNr_fAdjqAvLb3LAkoGJWU &callback=initMap">
+    </script>
 
 <!--
 To use this code on your website, get a free API key from Google.
@@ -68,6 +137,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 
-    </div>
+  
 </body>
 </html>
