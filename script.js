@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
  $('ul li').click(function(){
     // This function will be called every time one of the tabs is clicked
     
@@ -63,3 +64,18 @@ function initMap() {
 var directionsService = new google.maps.DirectionsService;
 
 
+function myMap() {
+  var myCenter = new google.maps.LatLng(40.730455, -74.002078);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 13};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "Lets have a slice !"
+  });
+  infowindow.open(map,marker);
+}
+
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFbhikqFTz2aSMerKJ1HCkpG-r7mQKm50 &callback=myMap"

@@ -1,21 +1,13 @@
 .h1 {
-    text-align:center;
-    font-style:italic;
-    color:#fc5137;
-    font-family: "Italiano 25px";
-}
-li {
-    padding:7px;
-}
-li a:hover {
-    background-color: red;
-    color: white;
-    text-decoration: none;
+  text-align: center;
+  font-style: italic;
+  color: #fc5137;
+  font-family: "Italiano 25px";
 }
 
 .d-block img-fluid {
-    height:500px;
-    width:500px;
+  height: 500px;
+  width: 500px;
 }
 
 .center {
@@ -23,63 +15,74 @@ li a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-p{
-    text-align:center;
-    font-family:"Slabo" 15px;
-   
+
+p {
+  text-align: center;
+  font-family: "Slabo" 15px;
 }
 
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
+  display: inline-block;
+  float: none;
 }
 
 .navbar .navbar-collapse {
-    text-align: center;
+  text-align: center;
+}
+.navbar-brand {
+  padding:0px;
+}
+.blue {
+  font-style: italic;
+  color: #fc5137;
 }
 
-.blue {
-    font-style: italic;
-    color: #fc5137;
-}
 h2 {
-    text-align:center;
-    font-family:"Slabo" 15px;
+  text-align: center;
+  font-family: "Slabo" 15px;
 }
+
 #font {
-    
-    font-family:"Slabo 20px";
+  font-family: "Slabo 20px";
 }
-.pic{
-    height:50px;
-    width:50px;
-    float:left;
-    
+
+.pic {
+  height:50px;
+  width:50px;
+ float:left;
+ 
 }
+
 .quotes {
-    text-align:center;
+  text-align: center;
 }
+
 .pictures {
-    height:100px;
+  height: 100px;
 }
+
 .h {
-    text-align:center;
+  text-align: center;
 }
+
 .bev {
-height:100px;
-    
+  height: 100px;
 }
+
 .p {
-    float:left;
+  float: left;
 }
-#floating-panel{
-    text-align:center;
+
+#floating-panel {
+  text-align: center;
 }
+
 .login-page {
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
 }
+
 .form {
   position: relative;
   z-index: 1;
@@ -90,6 +93,7 @@ height:100px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
@@ -101,6 +105,7 @@ height:100px;
   box-sizing: border-box;
   font-size: 14px;
 }
+
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -115,36 +120,47 @@ height:100px;
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.form button:hover, .form button:active, .form button:focus {
+
+.form button:hover,
+.form button:active,
+.form button:focus {
   background: #43A047;
 }
+
 .form .message {
   margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
+
 .form .message a {
   color: #4CAF50;
   text-decoration: none;
 }
+
 .form .register-form {
   display: none;
 }
+
 .container {
   position: relative;
   z-index: 1;
   max-width: 300px;
   margin: 0 auto;
 }
-.container:before, .container:after {
+
+.container:before,
+.container:after {
   content: "";
   display: block;
   clear: both;
 }
+
 .container .info {
   margin: 50px auto;
   text-align: center;
 }
+
 .container .info h1 {
   margin: 0 0 15px;
   padding: 0;
@@ -152,34 +168,65 @@ height:100px;
   font-weight: 300;
   color: #1a1a1a;
 }
+
 .container .info span {
   color: #4d4d4d;
   font-size: 12px;
 }
+
 .container .info span a {
   color: #000000;
   text-decoration: none;
 }
+
 .container .info span .fa {
   color: #EF3B3A;
 }
+
 .body {
-   /* fallback for old browsers */
-  background: -webkit-linear-gradient(right,);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, );
   background: -moz-linear-gradient(right, );
-  background: -o-linear-gradient(right,);
-  background: linear-gradient(to left,);
+  background: -o-linear-gradient(right, );
+  background: linear-gradient(to left, );
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#beverages{
-    font-size:50px;
+
+#beverages {
+  font-size: 25px;
+
+  
 }
 
-.dropdown-menu{
-    font-size:40px;
+#side-dish {
+  font-size: 25px;
 }
-#trouble{
-    float: right;
+
+.dropdown-menu {
+  font-size: 25px;
+}
+#button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+#map {
+  margin-left:320px;
+}
+#buttons{
+  margin-left:550px;
+}
+.modal-title{
+  text-align:center;
 }
