@@ -223,15 +223,25 @@ h2 {
   cursor: pointer;
 }
 #map {
-  margin-left:480px;
+  margin-left:350px;
 }
 #buttons{
-  margin-left:700px;
+  margin-left:580px;
 }
 .modal-title{
   text-align:center;
 }
 .caro{
-  height:610px;
-  width:890px;
+  height:510px;
+  width:990px;
+}
+.rest{
+  margin-left:150px;
+  height:510px;
+  width: 990px;
+  border:solid;
+}
+#gallery{
+   height:510px;
+  width:90px;
 }
