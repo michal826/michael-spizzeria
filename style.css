@@ -2,7 +2,7 @@
   text-align: center;
   font-style: italic;
   color: #fc5137;
-  font-family: "Italiano 25px";
+  font-family: "Italiano 35px";
 }
 
 .d-block img-fluid {
@@ -18,7 +18,7 @@
 
 p {
   text-align: center;
-  font-family: "Slabo" 15px;
+  font-family: "Italiano" 20px;
 }
 
 .navbar .navbar-nav {
@@ -39,11 +39,11 @@ p {
 
 h2 {
   text-align: center;
-  font-family: "Slabo" 15px;
 }
 
-#font {
-  font-family: "Slabo 20px";
+.font {
+  font-family: "Italianno";
+  font-size:25px;
 }
 
 .pic {
@@ -58,7 +58,8 @@ h2 {
 }
 
 .pictures {
-  height: 100px;
+  height: 50px;
+  float:right;
 }
 
 .h {
@@ -222,11 +223,15 @@ h2 {
   cursor: pointer;
 }
 #map {
-  margin-left:320px;
+  margin-left:480px;
 }
 #buttons{
-  margin-left:550px;
+  margin-left:700px;
 }
 .modal-title{
   text-align:center;
+}
+.caro{
+  height:610px;
+  width:890px;
 }
